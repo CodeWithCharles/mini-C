@@ -1,22 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   limb.h                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cpoulain <cpoulain@student.42lehavre.fr>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/05 23:20:05 by cpoulain          #+#    #+#             */
-/*   Updated: 2024/09/06 00:06:36 by cpoulain         ###   ########.fr       */
+/*   Created: 2024/09/05 23:53:33 by cpoulain          #+#    #+#             */
+/*   Updated: 2024/09/05 23:55:59 by cpoulain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#ifndef LIMB_H
+# define LIMB_H
 
-int	main(int argc, char **argv)
+# include "vector3.h"
+
+typedef struct s_limb
 {
-	if (argc == 2)
-	{
-		printf("%s ", argv[0]);
-	}
-	return (0);
-}
+	struct vector3	*vectors;
+	char			*name;
+}	t_limb;
+
+#endif

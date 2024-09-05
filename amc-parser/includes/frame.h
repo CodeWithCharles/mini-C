@@ -1,22 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   frame.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cpoulain <cpoulain@student.42lehavre.fr>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/05 23:20:05 by cpoulain          #+#    #+#             */
-/*   Updated: 2024/09/06 00:06:36 by cpoulain         ###   ########.fr       */
+/*   Created: 2024/09/05 23:47:20 by cpoulain          #+#    #+#             */
+/*   Updated: 2024/09/05 23:55:51 by cpoulain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#ifndef FRAME_H
+# define FRAME_H
 
-int	main(int argc, char **argv)
+# include "limb.h"
+
+typedef struct s_frame
 {
-	if (argc == 2)
-	{
-		printf("%s ", argv[0]);
-	}
-	return (0);
-}
+	struct limb		*limbs;
+	struct s_frame	*next;
+}	t_frame;
+
+#endif

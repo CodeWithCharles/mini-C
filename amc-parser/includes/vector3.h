@@ -1,22 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   vector3.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cpoulain <cpoulain@student.42lehavre.fr>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/05 23:20:05 by cpoulain          #+#    #+#             */
-/*   Updated: 2024/09/06 00:06:36 by cpoulain         ###   ########.fr       */
+/*   Created: 2024/09/05 23:54:34 by cpoulain          #+#    #+#             */
+/*   Updated: 2024/09/05 23:55:13 by cpoulain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#ifndef VECTOR3_H
+# define VECTOR3_H
 
-int	main(int argc, char **argv)
+typedef struct s_vector3
 {
-	if (argc == 2)
-	{
-		printf("%s ", argv[0]);
-	}
-	return (0);
-}
+	float	x;
+	float	y;
+	float	z;
+}	t_vector3;
+
+#endif
