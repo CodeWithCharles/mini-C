@@ -6,15 +6,13 @@
 /*   By: cpoulain <cpoulain@student.42lehavre.fr>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/05 23:56:26 by cpoulain          #+#    #+#             */
-/*   Updated: 2024/09/05 23:57:14 by cpoulain         ###   ########.fr       */
+/*   Updated: 2024/09/06 03:33:59 by cpoulain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIB_H
 # define LIB_H
 
-# include "frame.h"
-# include "limb.h"
 # include "vector3.h"
 
 #endif

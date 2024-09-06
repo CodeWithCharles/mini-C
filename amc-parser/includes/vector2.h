@@ -1,24 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   frame.h                                            :+:      :+:    :+:   */
+/*   vector2.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cpoulain <cpoulain@student.42lehavre.fr>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/05 23:47:20 by cpoulain          #+#    #+#             */
-/*   Updated: 2024/09/05 23:55:51 by cpoulain         ###   ########.fr       */
+/*   Created: 2024/09/06 03:57:01 by cpoulain          #+#    #+#             */
+/*   Updated: 2024/09/06 03:57:47 by cpoulain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FRAME_H
-# define FRAME_H
+#ifndef VECTOR2_H
+# define VECTOR2_H
 
-# include "limb.h"
-
-typedef struct s_frame
+typedef struct s_vector2
 {
-	struct limb		*limbs;
-	struct s_frame	*next;
-}	t_frame;
+	float	x;
+	float	y;
+}	t_vector2;
 
 #endif
